@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>score keeping app</title>
+	<style type="text/css">
+		.won{
+			color:green;
+		}
+		body{
+			padding-left: 350px;
+			padding-top: 10%;
+			background:url(http://data.freehdw.com/light-wood-textures-high-resolution.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		.disp{
+			font-size: 20px;
+		}
+		.ding{
+			background-color:rgb(135, 240, 55);
+			border:2px solid black;
+			box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+		}
+		.ring{
+			background-color:rgb(135, 240, 55);
+			border:2px solid green;
+			padding: 10px;
+		 box-shadow: 0px 4px 3px rgba(0,0,0,0.5),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+		}
+	</style>
+</head>
+<body>
+	<h1>Start counting here ;)</h1>
+	<h1><input type="text" required placeholder="Player 1 name" name="">==<span id="p1play" >0</span> to <input type="text" required placeholder="Player 2 name" name="">==<span id="p2play">0</span></h1>
+	<p class="disp"><strong>playing to: <span id="maxlim">5</span></strong></p>
+	<input placeholder="By-Default=5" type="number">
+	<button class="ding" id="p1">player one</button>
+	<button class="ding" id="p2">player two</button>
+	<button class="ring" id="rest">reset</button>
+<script type="text/javascript" src="scorekeeper.js"></script>
+
+</body>
+</html>
